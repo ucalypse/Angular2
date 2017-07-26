@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 export class Member{
   name: string;
   rank: number;
+  warStars: number;
 }
 @Component({
   selector: 'app-root',
@@ -12,8 +13,9 @@ export class Member{
 })
 export class AppComponent {
   title : 'In Yo Face';
-  leader : Member = {
+  member : Member = {
     name: "whoa",
-    rank:1
+    rank:1,
+    warStars:36
   }
 }
